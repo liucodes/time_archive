@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<link href="assets/reset.css" rel="stylesheet">
+		<link href="assets/style.css" rel="stylesheet">
+		<script src="assets/arena.js"></script>
+		<link href="assets/favicon.png" rel="icon">
+	</head>
+	<body>
+
+
+
+
+		<!-- Replace this URL with your channel to connect the API! -->
+		<header>
+		<a href="https://www.are.na/junying-li/old-clocks" id="channel-url"><!-- The channel title will be inserted inside this h1. -->
+     <a id="channel-title"></a>
+		</a>
+		<div id="channel-description"></div> <!-- Same here for the channel description. -->
+	</header>
+
+
+	<header class="six-column">
+	  <a href="index.html"> SHAPES OF TIME </a>
+		<h1>→00:00 AM </h1>
+		<a href="02am.html">02:00 AM</a>
+		<a href="04am.html">04:00 AM</a>
+		<a href="06am.html">06:00 AM</a>
+		<a href="08am.html">08:00 AM</a>
+		<a href="https://www.are.na/vern-liu-1ov_c1lpr70" target="_blank">ARE.NA</a>
+
+
+
+
+
+</header>
+
+
+		<!-- All the channel “blocks” will be created as children, here. -->
+		<!-- You could move the classes to different section elements to separate the types! -->
+<div class="two-column"> <section class="text-blocks">
+ <a>
+ </section>
+ </div>
+
+<div class="three-column">
+ <section class="image-blocks">
+ </section>
+</div>
+
+
+		<!-- These are the templates for the various block types, below. -->
+		<!-- You can move/nest/remove any of the insertion points! -->
+		<!-- For example, you could only show images for actual image blocks. -->
+		<!-- You could not show the type if you group them by section, above. -->
+
+
+	<template id="image-block">
+			<figure class="image-block">
+		    <img class="image">
+			</figure>
+		</template>
+
+		<template id="link-block">
+			<figure class="link-block">
+				<img class="image">
+				<figcaption class="description"></figcaption>
+			</figure>
+		</template>
+
+		<template id="text-block">
+			<figure class="text-block">
+				<h3 class="title"></h3>
+				<div class="content"></div> <!-- Text blocks insert their HTML here. -->
+				<figcaption class="description"></figcaption>
+
+			</figure>
+		</template>
+
+
+
+	</body>
+</html>
